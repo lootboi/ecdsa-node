@@ -18,7 +18,7 @@ function Wallet({ address, setAddress, balance, setBalance, privateKey, setPriva
     if (address) {
       const {
         data: { balance },
-      } = await server.get(`balance/${'0x'+address}`);
+      } = await server.get(`balance/${'0x' + address}`);
       setBalance(balance);
     } else {
       setBalance(0);
