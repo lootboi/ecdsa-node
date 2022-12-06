@@ -85,7 +85,7 @@ function Transfer({address, setBalance}) {
             </label>
 
             <label>
-                Revovery Bit
+                Recovery Bit
                 <input
                     placeholder="Type the recovery bit..."
                     value={recoveryBit}
