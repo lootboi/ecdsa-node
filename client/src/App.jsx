@@ -7,6 +7,9 @@ function App() {
   const [balance, setBalance] = useState(0);
   const [address, setAddress] = useState("");
   const [privateKey, setPrivateKey] = useState("");
+  const [publicKey, setPublicKey] = useState("");
+  const [signature, setSignature] = useState("");
+  const [recoveryBit, setRecoveryBit] = useState("");
 
   return (
     <div className="app">
@@ -17,6 +20,12 @@ function App() {
         setBalance={setBalance}
         address={address}
         setAddress={setAddress}
+        publicKey={publicKey}
+        setPublicKey={setPublicKey}
+        setSignature={setSignature}
+        setRecoveryBit={setRecoveryBit}
+        signature={signature}
+        recoveryBit={recoveryBit}
       />
       <Transfer setBalance={setBalance} address={address} />
     </div>
